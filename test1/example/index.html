@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>test-1</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .content {
+      min-height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+    }
+
+    .img-box {
+      width: 200px;
+      cursor: pointer;
+      transition: all 1s;
+    }
+
+    .img-box:hover {
+      animation: img-spin infinite .4s linear alternate;
+      /* animation: img-spin 1s infinite; */
+    }
+
+    .img-box img {
+      width: 100%;
+    }
+
+    @keyframes img-spin {
+      from {
+        transform: rotateY(0deg);
+        /* transform:  rotateX(0deg); */
+      }
+      to {
+        transform: rotateY(15deg);
+        /* transform: rotateX(30deg); */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div class="img-box">
+      <img src="./box-close.png" alt="">
+    </div>
+  </div>
+</body>
+
+</html>
